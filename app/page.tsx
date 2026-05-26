@@ -78,17 +78,6 @@ export default function Home() {
 
       </main>
 
-      <div className="footer-statement">
-        <div className="container">
-          <div className="footer-statement-inner">
-            <svg className="swoosh" viewBox="0 0 120 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3,32 C10,15 40,2 115,8 C90,22 15,40 3,32 Z"/>
-            </svg>
-            <p className="footer-tagline">Just test it</p>
-          </div>
-        </div>
-      </div>
-
       <Footer />
     </>
   )
