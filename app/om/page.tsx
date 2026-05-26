@@ -15,7 +15,13 @@ export default function Om() {
       <main>
 
         <section className="container">
-          <div style={{ padding: '72px 0 0', maxWidth: '420px' }}>
+          <div style={{ padding: '72px 0 0' }}>
+            <p className="ago-ergo-sum"><em>Ago ergo sum</em> — jeg handler, derfor er jeg</p>
+          </div>
+        </section>
+
+        <section className="container">
+          <div style={{ padding: '32px 0 0', maxWidth: '420px' }}>
             <Image
               src="/jonas.jpeg"
               alt="Jonas Lillo-Stenberg"
@@ -40,6 +46,7 @@ export default function Om() {
 
           <div className="about-section">
             <p className="section-label">Hvordan jeg jobber</p>
+            <h2 style={{ marginBottom: '32px' }}>Hvordan jeg <s>jobber</s> har det gøy hver dag</h2>
             <ul className="method-list">
               <li className="method-item">
                 <strong>Etterspørsel før kode.</strong>

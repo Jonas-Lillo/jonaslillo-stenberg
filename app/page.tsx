@@ -7,17 +7,46 @@ export default function Home() {
       <Header activePage="hjem" />
       <main>
 
-        <section className="hero">
+        <section className="section section--split">
           <div className="container">
-            <h1>Digital vekst krever bevis, ikke gjetting.</h1>
-            <p className="hero-sub">
-              Leger lærer av å behandle. Ingeniører lærer av å bygge.<br />
-              Analyse er ikke eksperimentering. Handling er.<br />
-              Du kan håpe på vekst, eller du kan vite hva som skaper den.
-            </p>
-            <div className="hero-ctas">
-              <a href="mailto:jonas@datona.no" className="btn-primary">Snakk med meg →</a>
-              <a href="/innhold" className="link-arrow">Les essays</a>
+            <div className="split-layout">
+
+              <div className="split-text">
+                <h1 style={{ marginBottom: '28px' }}>
+                  Digital vekst krever <s>tenking</s> handling utenfor boksen.
+                </h1>
+                <div className="prose">
+                  <p>Fysikk, biologi, kjemi til og med kjønnspsykologi gjør eksperimentering: tester, lærer, endrer og utfører.</p>
+                  <p>I den digitale verden vil folk gjerne bygge eller kjøpe antagelser. Det som fungerer er urgammelt og enkelt</p>
+                  <ol className="method-steps">
+                    <li>Mange små tester</li>
+                    <li>Les resultatene</li>
+                    <li>Gjør det data tilsier at fungerer</li>
+                  </ol>
+                </div>
+                <div className="hero-ctas" style={{ marginTop: '32px' }}>
+                  <a href="mailto:jonas@datona.no" className="btn-primary">Snakk med meg →</a>
+                  <a href="/innhold" className="link-arrow">Les essays</a>
+                </div>
+              </div>
+
+              <div className="split-table-wrap">
+                <table className="compare-table">
+                  <thead>
+                    <tr>
+                      <th>Antagelsene:</th>
+                      <th>Realiteten:</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Nettside</td><td>Presentasjon</td></tr>
+                    <tr><td>SEO</td><td>Synlighet</td></tr>
+                    <tr><td>App</td><td>Løsning på problem</td></tr>
+                    <tr><td>Sosiale medier</td><td>Synlighet</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
             </div>
           </div>
         </section>
@@ -48,6 +77,18 @@ export default function Home() {
         </section>
 
       </main>
+
+      <div className="footer-statement">
+        <div className="container">
+          <div className="footer-statement-inner">
+            <svg className="swoosh" viewBox="0 0 120 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3,32 C10,15 40,2 115,8 C90,22 15,40 3,32 Z"/>
+            </svg>
+            <p className="footer-tagline">Just test it</p>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </>
   )
